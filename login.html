@@ -13,7 +13,8 @@
         <img
           class="logo"
           src="Images/vinylskiva.png"
-          alt="En bild på en vinylskiva" />
+          alt="En bild på en vinylskiva"
+        />
       </a>
       <div id="firstlink" class="topitem">
         <a href="main.html"><h1>Startsida</h1></a>
@@ -27,9 +28,19 @@
       <div id="loginlink">
         <a href="login.html"><h1>Logga In</h1></a>
       </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="nav-icon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="main.html" class="hamburgerlink">Startsida</a></li>
+        <li><a href="vinyl.html" class="hamburgerlink">LP</a></li>
+        <li><a href="CD.html" class="hamburgerlink">CD</a></li>
+        <li><a href="login.html" class="hamburgerlink">Logga In</a></li>
+      </ul>
     </header>
     <main id="loginsite">
-      <div id="loginbox">
+      <div class="loginbox">
         <h1 class="loginboxitems" id="logintitle">Logga In</h1>
         <form action="main.html">
           <h1 class="loginboxtitles">Mailadress</h1>
@@ -37,20 +48,24 @@
             type="text"
             placeholder="exempel@mail.com"
             required="required"
-            class="loginboxitems textinput" />
+            class="loginboxitems textinput"
+          />
           <h1 class="loginboxtitles">Lösenord</h1>
           <input
             type="password"
             placeholder="Samuel=Ted"
             required="required"
-            class="loginboxitems textinput" />
+            class="loginboxitems textinput"
+          />
           <input
             type="submit"
             value="Logga In"
             class="loginboxitems"
-            id="loginbutton" />
+            id="loginbutton"
+          />
         </form>
       </div>
     </main>
+    <footer id="loginfooter"></footer>
   </body>
 </html>
