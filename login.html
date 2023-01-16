@@ -13,8 +13,7 @@
         <img
           class="logo"
           src="Images/vinylskiva.png"
-          alt="En bild på en vinylskiva"
-        />
+          alt="En bild på en vinylskiva" />
       </a>
       <div id="firstlink" class="topitem">
         <a href="main.html"><h1>Startsida</h1></a>
@@ -32,26 +31,25 @@
     <main id="loginsite">
       <div id="loginbox">
         <h1 class="loginboxitems" id="logintitle">Logga In</h1>
-        <h1 class="loginboxtitles">Mailadress</h1>
-        <input
-          type="text"
-          placeholder="exempel@mail.com"
-          class="loginboxitems textinput"
-        />
-        <h1 class="loginboxtitles">Lösenord</h1>
-        <input
-          type="password"
-          placeholder="Samuel>Ted"
-          class="loginboxitems textinput"
-        />
-        <a href="main.html" id="loginlink2">
+        <form action="main.html">
+          <h1 class="loginboxtitles">Mailadress</h1>
           <input
-            type="button"
+            type="text"
+            placeholder="exempel@mail.com"
+            required="required"
+            class="loginboxitems textinput" />
+          <h1 class="loginboxtitles">Lösenord</h1>
+          <input
+            type="password"
+            placeholder="Samuel=Ted"
+            required="required"
+            class="loginboxitems textinput" />
+          <input
+            type="submit"
             value="Logga In"
             class="loginboxitems"
-            id="loginbutton"
-          />
-        </a>
+            id="loginbutton" />
+        </form>
       </div>
     </main>
   </body>

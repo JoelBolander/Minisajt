@@ -18,7 +18,7 @@ header {
 
 .topitem {
   width: 10%;
-  height: 10vh;
+  height: 100%;
   background-color: rgb(32, 32, 32);
   position: absolute;
   transition: 0.5s;
@@ -61,7 +61,7 @@ a {
   height: 10vh;
   left: 40px;
   transition: all 0.5s;
-  animation: rotation 2s infinite linear;
+  animation: rotation 1.3s infinite linear;
   animation-play-state: paused;
 }
 
@@ -111,8 +111,8 @@ a {
   border-radius: 25px;
   display: flex;
   align-items: center;
-  width: 50vh;
-  height: 50vh;
+  width: 500px;
+  height: 65vh;
   margin-top: 20vh;
   background-color: rgb(32, 32, 32);
   flex-direction: column;
@@ -136,8 +136,15 @@ a {
 #loginbutton {
   height: 3vh;
   width: max(100px, 6vw);
-  margin-top: 5vh;
+  margin-top: 8vh;
   color: rgb(32, 32, 32);
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+#loginbutton:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 #logintitle {
@@ -145,13 +152,14 @@ a {
   font-size: 250%;
 }
 
-#loginlink2 {
-  width: 100%;
-  height: 100%;
-}
-
 .textinput {
   padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .heading {
@@ -173,6 +181,7 @@ a {
 }
 
 .informationstartsida {
+  border-radius: 10px;
   padding-top: 16vh;
   font-size: max(3vw, 30px);
   font-family: customFonts;
