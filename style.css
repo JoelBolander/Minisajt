@@ -340,9 +340,8 @@ form {
 
 .gridbox {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   grid-column-gap: 5vh;
-  grid-template-rows: repeat(auto-fill, minmax(450px, 1fr));
   grid-row-gap: 1vh;
   justify-items: center;
   align-items: center;
@@ -366,10 +365,16 @@ footer {
   color: white;
   font-family: sans-serif;
   flex-direction: column;
+  box-shadow: 0 0 0 10px rgb(64, 64, 64);
 }
 
 .footerdiv {
+  text-align: center;
   display: flex;
+}
+
+#footerlogin {
+  margin-top: 0;
 }
 
 .footerlistdiv {
@@ -385,6 +390,14 @@ footer {
 
 .footerlistitem {
   margin: 10px 0;
+}
+
+.footericondiv {
+  display: flex;
+}
+
+.footericon {
+  margin: 3px;
 }
 
 .cookieinfo {
@@ -406,7 +419,7 @@ footer {
     margin-left: 10px;
   }
   footer {
-    height: 100vh;
+    height: 110vh;
   }
   .footerdiv {
     flex-direction: column;
@@ -416,7 +429,7 @@ footer {
     width: 40vw;
   }
   .cookieinfo {
-    margin-top: 0;
+    margin-top: 2vh;
   }
 }
 
