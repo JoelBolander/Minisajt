@@ -51,8 +51,8 @@ header {
 .nav-icon {
   background: white;
   display: block;
-  height: 2px;
-  width: 18px;
+  height: 4px;
+  width: 36px;
   position: relative;
   transition: background 0.2s ease-out;
 }
@@ -65,7 +65,7 @@ header {
   width: 100%;
   position: absolute;
   transition: all 0.2s ease-out;
-  top: 5px;
+  top: 10px;
 }
 
 .nav-icon:after {
@@ -76,7 +76,7 @@ header {
   width: 100%;
   position: absolute;
   transition: all 0.2s ease-out;
-  top: -5px;
+  top: -10px;
 }
 
 .menu-btn {
@@ -104,12 +104,12 @@ header {
   height: 100%;
   background-color: rgb(32, 32, 32);
   position: absolute;
-  transition: 0.5s;
+  transition: 0.3s;
   font-family: customFonts;
 }
 
 .topitem:hover {
-  transition: 1s;
+  transition: 0.5s;
   background-color: gray;
 }
 
@@ -187,10 +187,8 @@ a {
 }
 
 #loginsite {
-  background-image: url(Images/vinyl-store.jpg);
-  background-repeat: no-repeat;
+  background: #b62424 url(Images/vinyl-store.jpg) no-repeat center center;
   background-size: cover;
-  background-position: center center;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -358,45 +356,71 @@ form {
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 5vh;
-  height: 30vh;
+  height: 55vh;
   width: 100%;
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(16, 16, 16);
   color: white;
-  text-align: center;
+  font-family: sans-serif;
+  flex-direction: column;
+}
+
+.footerdiv {
+  display: flex;
+}
+
+.footerlistdiv {
+  width: 20vw;
+  height: 30vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.footerlist {
+  list-style: none;
+}
+
+.footerlistitem {
+  margin: 10px 0;
+}
+
+.cookieinfo {
+  margin-top: 5vh;
+  font-size: 10px;
 }
 
 @media screen and (max-width: 820px) {
   #loginlink {
     display: none;
   }
-
   .topitem {
     display: none;
   }
-
-  #firstlink {
-    display: none;
-  }
-
-  #secondlink {
-    display: none;
-  }
-
-  #thirdlink {
-    display: none;
-  }
-
   .logo {
     left: 10px;
   }
-
   .logolink {
     margin-left: 10px;
   }
+  footer {
+    height: 100vh;
+  }
+  .footerdiv {
+    flex-direction: column;
+    margin-top: 5vh;
+  }
+  .footerlistdiv {
+    width: 40vw;
+  }
+  .cookieinfo {
+    margin-top: 0;
+  }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1600px) {
   .loginbox {
     border-radius: 25px;
     display: flex;
